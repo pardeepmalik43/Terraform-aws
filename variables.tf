@@ -1,4 +1,4 @@
-#Copyright 2019 Fairwinds Inc.
+#Copyright 
 #
 #Licensed under the Apache License, Version 2.0 (the “License”);
 #you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@ variable "aws_region" {
 }
 
 variable "aws_vpc_name" {
-  default = "vpc"
+  default = "digi-dev"
 }
 
 variable "aws_azs" {
   description = "comma separated string of availability zones in order of precedence"
-  default     = "us-east-1a, us-east-1d, us-east-1e, us-east-1c"
+  default     = "ap-south-1a, ap-south-1b, ap-south-1c"
 }
 
 variable "az_count" {
@@ -188,8 +188,8 @@ variable "global_tags" {
   description = "AWS tags that will be added to all resources managed herein"
   type = map(string)
   default = {
-    "Author" = "Fairwinds"
-    "Managed By" = "Terraform"
+    "Author" = "Pardeep Malik"
+    "Managed By" = "Digilytics"
   }
 }
 
